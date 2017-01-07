@@ -6,5 +6,20 @@
   </head>
   <body>
     <h1>Hello World!</h1>
+    <p>NCHS - Drug Poisoning Mortality, County Trends: United States, 1999–2014</p>
+    <a target="_blank" href="https://dev.socrata.com/foundry/data.cdc.gov/tenp-43rk">reference</a><br>
+    <label for="countySelection">Choose a County</label>
+    <select name="countySelection" autofocus>
+      {% for item in counties %}
+      <option value="{{ item }}">{{ item }}</option>
+      {% endfor %}
+    </select>
+
+{{value}}
+    <!-- {% for item in allData %}
+    {{ item.county }}
+    {{ item.estimated_age_adjusted_death_rate_11_categories_in_ranges }}
+    <br>
+    {% endfor %} -->
   </body>
 </html>
