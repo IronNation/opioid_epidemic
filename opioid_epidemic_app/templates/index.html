@@ -11,15 +11,14 @@
     <label for="countySelection">Choose a County</label>
     <select name="countySelection" autofocus>
       {% for item in counties %}
-      <option value="{{ item }}">{{ item }}</option>
+      <option value="{{ item }}">{{ item }} </option>
       {% endfor %}
     </select>
-
-{{value}}
-    <!-- {% for item in allData %}
+    <br>
+    {% for item in allData %}
     {{ item.county }}
     {{ item.estimated_age_adjusted_death_rate_11_categories_in_ranges }}
     <br>
-    {% endfor %} -->
+    {% endfor %}
   </body>
 </html>

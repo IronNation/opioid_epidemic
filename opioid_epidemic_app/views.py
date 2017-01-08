@@ -11,4 +11,4 @@ def index(request):
         counties.append(item['county'])
     countyList = set(counties)
     countyList = sorted(countyList)
-    return render_to_response("index.html", {'counties': countyList})
+    return render_to_response("index.html", {'counties': countyList, 'allData': data})
